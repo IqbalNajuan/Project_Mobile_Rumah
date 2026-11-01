@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet Warna KaryaKita -->
+    <color name="cream">#FFF8F4EC</color>
+    <color name="terracotta">#FFB85C38</color>
+    <color name="forest_green">#FF283D32</color>
+    <color name="sand">#FFE6CBA8</color>
+    <color name="charcoal">#FF292824</color>
+</resources>

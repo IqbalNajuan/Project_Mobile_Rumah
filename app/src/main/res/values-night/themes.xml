@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ProjectMobile" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Tetap gunakan warna cream meskipun perangkat dalam Dark Mode -->
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="android:statusBarColor">@color/cream</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/cream</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="Theme.ProjectMobile" parent="Base.Theme.ProjectMobile" />
+</resources>
