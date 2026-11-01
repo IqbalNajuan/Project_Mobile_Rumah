@@ -24,22 +24,11 @@ class SplashScreenActivity : AppCompatActivity() {
             insets
         }
 
-        // Mengecek status login dari SharedPreferences
-        val sharedPref = getSharedPreferences("UserPrefs", MODE_PRIVATE)
-        val isLogin = sharedPref.getBoolean("isLogin", false)
-
         lifecycleScope.launch {
-            delay(2000)
+            delay(1500)
 
-            // Menentukan halaman berikutnya berdasarkan status isLogin
-            val target = if (isLogin) {
-                BaseActivity::class.java
-            } else {
-                LoginActivity::class.java
-            }
-
-            val intent = Intent(this@SplashScreenActivity, LoginActivity::class.java)
-
+            // Langsung membuka TutorialActivity untuk kebutuhan dokumentasi/screenshot
+            val intent = Intent(this@SplashScreenActivity, TutorialActivity::class.java)
             startActivity(intent)
             finish()
         }

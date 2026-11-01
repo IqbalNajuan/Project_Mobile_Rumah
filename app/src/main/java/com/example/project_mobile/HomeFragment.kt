@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.project_mobile.LoginActivity
+import com.example.project_mobile.TutorialActivity
 import com.example.project_mobile.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -29,6 +30,11 @@ class HomeFragment : Fragment() {
         val sharedPref = requireContext().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
         val username = sharedPref.getString("username", "Kreator")
         binding.tvWelcome.text = "Halo, $username!"
+
+        binding.btnTutorial.setOnClickListener {
+            val intent = Intent(requireContext(), TutorialActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(requireContext())
